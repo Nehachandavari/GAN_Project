@@ -1,5 +1,5 @@
 # GAN
 Generative Adversarial Networks (GANs) are a type of machine learning framework composed of two neural networks: a generator and a discriminator. The generator creates synthetic data, while the discriminator evaluates its authenticity. This adversarial process helps the generator improve its data generation capabilities over time. GANs are highly effective in producing high-quality, realistic outputs, making them useful in various applications, including image generation, data augmentation, and style transfer. They are particularly valuable in situations where collecting real-world data is difficult or costly, as they can generate diverse datasets for training other models. By simulating real data, GANs enable advancements in fields such as computer vision, natural language processing, and creative industries, providing innovative solutions to complex problems.
 
-##Project Overview
+## Project Overview
 In this project, I am utilizing the "CelebFaces Attributes (CelebA)" Dataset for a Generative Adversarial Network (GAN) project.
