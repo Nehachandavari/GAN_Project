@@ -23,5 +23,26 @@ Takes an input image and a label as inputs.
 Utilizes Conv2D, LeakyReLU activation, and Dropout layers for processing.
 Outputs a single value indicating real or fake image.
 Displays the critic model summary.
+### 2. Generator Model:
+
+Defines the architecture for the generator model.
+Takes noise vector (latent space) and a label as inputs.
+Uses Conv2DTranspose, BatchNormalization, and LeakyReLU layers to generate images.
+Outputs synthetic images matching input dimensions.
+Displays the generator model summary.
+### 3. ConditionalWGAN Class:
+
+Custom model combining critic and generator.
+Methods for compiling, gradient penalty calculation, and train_step method for training.
+Critic trained for multiple steps (critic_steps).
+Generator trained to deceive critic.
+Tracks critic and generator losses during training.
+### 4. Training Setup:
+
+Instance of ConditionalWGAN with critic, generator, latent dimension, critic steps, and gradient penalty.
+cWGAN compiled with Adam optimizers for critic and generator.
+
+## Conclusion
+This cWGAN project leverages TensorFlow and Keras to create synthetic facial images from the CelebA dataset based on given facial attribute labels. The critic distinguishes real from synthetic images, while the generator learns to produce realistic facial images conditioned on specified attributes.
 
 
